@@ -95,7 +95,7 @@ const Header = ({ type }) => {
             {!user && <button className="headerBtn">Sign in / Register</button>}
             <div className="headerSearch">
               <div className="headerSearchItem">
-                <FontAwesomeIcon icon={faBed} className="headerIcon" />
+                <FontAwesomeIcon className="headerIcon" />
                 <input
                   type="text"
                   placeholder="Where are you going?"
@@ -104,7 +104,7 @@ const Header = ({ type }) => {
                 />
               </div>
               <div className="headerSearchItem">
-                <FontAwesomeIcon icon={faCalendarDays} className="headerIcon" />
+                <FontAwesomeIcon icon={faCalendarDays} className="headerIcon"/>
                 <span
                   onClick={() => setOpenDate(!openDate)}
                   className="headerSearchText"

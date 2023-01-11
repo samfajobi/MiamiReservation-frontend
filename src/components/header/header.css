@@ -75,10 +75,11 @@
 .headerSearchInput {
   border: none;
   outline: none;
+  color: cadetblue;
 }
 
 .headerSearchText {
-  color: lightgray;
+  color: cadetblue;
   cursor: pointer;
 }
 
