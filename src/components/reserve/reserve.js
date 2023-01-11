@@ -13,7 +13,7 @@ const Reserve = ({setOpen, HotelId}) => {
   const navigate = useNavigate() 
   
   const [selectedRooms, setSelectedRooms] = useState([]);
-  const { data, loading, error } = useFetch(`/hotel/room/${HotelId}`);
+  const { data, loading, error } = useFetch(`https://miami-reserve-api.onrender.com/api/hotel/room/${HotelId}`);
   console.log(data);  
 
   const handleCheck = (e) => {
