@@ -3,9 +3,9 @@ import "./featuredProperties.css";
 
 const FeaturedProperties = () => {
   
-  const { loading, error, data } = useFetch("https://miami-reserve-api.onrender.com/hotel?featured=true&limit=4")
-  // console.log(data)
-  // console.log(error)
+  const { loading, error, data } = useFetch("https://miami-reserve-api.onrender.com/api/hotel?featured=true&limit=4")
+  console.log(data)
+  console.log(error)
 
   return (
     <div className="fp">
