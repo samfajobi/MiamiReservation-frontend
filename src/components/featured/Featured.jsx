@@ -10,9 +10,9 @@ import "./featured.css";
 const Featured = () => {
 
   const { loading, error, data } = useFetch("/hotel/countbycity/?cities=Lagos,Ibadan,Ogun")
-  // console.log(data)
+  console.log(data)
   
-  
+   
   return (
     <div className="featured">
       { loading ? 
