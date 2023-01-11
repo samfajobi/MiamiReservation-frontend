@@ -9,7 +9,7 @@ import "./featured.css";
 
 const Featured = () => {
 
-  const { loading, error, data } = useFetch("/hotel/countbycity/?cities=Lagos,Ibadan,Ogun")
+  const { loading, error, data } = useFetch("https://miami-reserve-api.onrender.com/api/hotel/countbycity/?cities=Lagos,Ibadan,Ogun")
   console.log(data)
   
    

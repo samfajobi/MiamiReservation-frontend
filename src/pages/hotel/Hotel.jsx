@@ -46,7 +46,7 @@ const Hotel = () => {
     },
   ];
 
-  const { data, error, loading } = useFetch(`/hotel/find/${id}`)
+  const { data, error, loading } = useFetch(`https://miami-reserve-api.onrender.com/api/hotel/find/${id}`)
 
   const {date, options} = useContext(SearchContext)
   const { user } = useContext(AuthContext) 

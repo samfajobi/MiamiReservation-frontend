@@ -17,7 +17,7 @@ const List = () => {
   const [min, setMin ] = useState(undefined);
   const [max, setMax] = useState(undefined)
 
-  const { loading, data, error, reFetch} =  useFetch(`/hotel?city=${destination}&min=${min || 0 }&max=${max || 999}`);
+  const { loading, data, error, reFetch} =  useFetch(`https://miami-reserve-api.onrender.com/api/hotel?city=${destination}&min=${min || 0 }&max=${max || 999}`);
   console.log(data);
   
   const handleSubmit = () => {
